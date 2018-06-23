@@ -4,7 +4,7 @@ def DPfact(N):
     return memo[N]
   if N == 0 or N == 1:
     return 1
-    memo[N] = 1
+    memo[1] = 1
   else:
     factorial = N*DPfact(N - 1)
   memo[N] = factorial
